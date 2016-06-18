@@ -14,8 +14,16 @@ public class UserModelTest {
     public void usernameIonTest(){
         UserModel um = new UserModel("A", ":");
 
-        boolean uset = um.setUsername("ion");
-        Assert.assertFalse(uset);
+        String uset = um.setUsername("ion");
+        Assert.assertFalse(uset.equals("A"));
+    }
+
+    @Test
+    public void usernameNickTest(){
+        UserModel um = new UserModel("A", ":");
+
+        String uset = um.setUsername("nic");
+        Assert.assertFalse(uset.equals("nic"));
     }
 
 }

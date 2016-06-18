@@ -13,12 +13,11 @@ public class UserModel {
         this.password = password;
     }
 
-    public boolean setUsername(String username){
+    public String setUsername(String username){
 
         if(username.equals("ion")){
-            return false;
+            return this.username;
         }
-        this.username = username;
-        return true;
+        return this.username = username;
     }
 }
