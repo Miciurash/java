@@ -15,7 +15,7 @@ public class UserModelTest {
         UserModel um = new UserModel("A", ":");
 
         String uset = um.setUsername("ion");
-        Assert.assertFalse(uset.equals("A"));
+        Assert.assertTrue(uset.equals("A"));
     }
 
     @Test
@@ -23,7 +23,7 @@ public class UserModelTest {
         UserModel um = new UserModel("A", ":");
 
         String uset = um.setUsername("nic");
-        Assert.assertFalse(uset.equals("nic"));
+        Assert.assertTrue(uset.equals("nic"));
     }
 
 }
